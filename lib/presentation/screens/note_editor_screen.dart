@@ -115,16 +115,16 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
       final shouldDiscard = await showDialog<bool>(
         context: context,
         builder: (context) => AlertDialog(
-          title: const Text('Discard changes?'),
-          content: const Text('You have unsaved changes. Do you want to discard them?'),
+          title: const Text(AppStrings.discardChanges),
+          content: const Text(AppStrings.unsavedChanges),
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(false),
-              child: const Text('Keep editing'),
+              child: const Text(AppStrings.keepEditing),
             ),
             FilledButton(
               onPressed: () => Navigator.of(context).pop(true),
-              child: const Text('Discard'),
+              child: const Text(AppStrings.discard),
             ),
           ],
         ),

@@ -74,7 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
             style: FilledButton.styleFrom(
               backgroundColor: Theme.of(context).colorScheme.error,
             ),
-            child: const Text('Delete'),
+            child: const Text(AppStrings.delete),
           ),
         ],
       ),
@@ -113,7 +113,7 @@ class _HomeScreenState extends State<HomeScreen> {
         controller: _searchController,
         autofocus: true,
         decoration: InputDecoration(
-          hintText: 'Search notes...',
+          hintText: AppStrings.searchNotes,
           border: InputBorder.none,
           hintStyle: TextStyle(
             color: Theme.of(context).appBarTheme.foregroundColor?.withOpacity(0.6),
@@ -184,7 +184,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: AppDimensions.paddingM),
             Text(
-              isSearching ? 'No notes found' : AppStrings.noNotes,
+              isSearching ? AppStrings.noNotesFound : AppStrings.noNotes,
               style: Theme.of(context).textTheme.titleMedium,
               textAlign: TextAlign.center,
             ),

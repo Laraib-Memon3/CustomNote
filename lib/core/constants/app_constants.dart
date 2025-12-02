@@ -71,6 +71,14 @@ class AppStrings {
   static const String darkMode = 'Dark';
   static const String pastelMode = 'Pastel';
   static const String selectColor = 'Select Color';
+  static const String select = 'Select';
+  static const String delete = 'Delete';
+  static const String searchNotes = 'Search notes...';
+  static const String noNotesFound = 'No notes found';
+  static const String discardChanges = 'Discard changes?';
+  static const String unsavedChanges = 'You have unsaved changes. Do you want to discard them?';
+  static const String keepEditing = 'Keep editing';
+  static const String discard = 'Discard';
 }
 
 /// App-wide dimension constants.

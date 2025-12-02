@@ -170,7 +170,7 @@ class _ColorPickerDialogState extends State<ColorPickerDialog> {
         ),
         FilledButton(
           onPressed: () => Navigator.of(context).pop(_selectedColorValue),
-          child: const Text('Select'),
+          child: const Text(AppStrings.select),
         ),
       ],
     );
